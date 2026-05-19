@@ -1,73 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>Claire</title>
     <link rel="stylesheet" href="./style.css">
 </head>
-<body>
- <section>
-    <nav>
-        <img src="./HTML Assets/FES.svg" class="logo" alt="">
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#discord">Discord</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <header>
-        <div>
-            <h1>Best Place to Learn Front End!</h1>
-            <p class="subheader">Go from beginner to pro with a simplified process</p>
-            <button>Start Now</button>
-        </div>
-        <figure>
-            <img src="HTML Assets/laptop.png" alt="homepage image">
-        </figure>
-    </header>
- </section>
- <main>
-    <section id="about">
-        <h2>About</h2>
-        <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eaque eveniet incidunt quo aperiam ipsa in tenetur dicta quae nisi nostrum, expedita repellat inventore, unde numquam cumque voluptatum minima repudiandae.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eaque eveniet incidunt quo aperiam ipsa in tenetur dicta quae nisi nostrum, expedita repellat inventore, unde numquam cumque voluptatum minima repudiandae.</p>
-        </div>
-        <figure>
-            <img src="./HTML Assets/about.jpg">
-        </figure>
-    </section>
-    <section id="discord">
-        <h2>Discord</h2>
-        <figure>
-            <img src="./HTML Assets/discord.png">
-        </figure>
-        <div>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique ut voluptatem quidem vitae mollitia maxime dolorem voluptatibus explicabo nobis! Aliquid, ea. Expedita, minima possimus. Sint maxime excepturi inventore voluptatibus rerum.</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique ut voluptatem quidem vitae mollitia maxime dolorem voluptatibus explicabo nobis! Aliquid, ea. Expedita, minima possimus. Sint maxime excepturi inventore voluptatibus rerum.</p>
-        </div>
-    </section>
-    <section id="Contact">
-        <h2>Contact</h2>
-        <form action="">
-            <span>Email</span>
-            <input type="text" placeholder="claire@example.com">
-            <span>Message</span>
-            <textarea type="text" placeholder="claire@example.com"></textarea>
-        </form>
-    </section>
- </main>
 
- <footer>
-    <img src="./HTML Assets/FES.svg" alt="">
-    <div>
-        <a href="#about">About</a>
-        <a href="#discord">Discord</a>
-        <a href="#contact">Contact</a>
-        <a href="#courses">Courses</a>
-    </div>
-    <p>Copyright Frontend Simplified</p>
- </footer>
+<body>
+    <section>
+        <nav>
+            <img src="./HTML Assets/FES.svg" class="logo" alt="">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#discord">Discord</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <header>
+            <div class="row">3
+                <div>
+                    <h1>Best Place to Learn Front End!</h1>
+                    <p class="subheader">Go from beginner to pro with a simplified process</p>
+                    <button>Start Now</button>
+                </div>
+                <figure>
+                    <img src="HTML Assets/laptop.png" alt="homepage image">
+                </figure>
+            </div>
+        </header>
+    </section>
+
+    <main>
+        <section id="about">
+            <h2>About</h2>
+            <div class="row">
+                <div class="section__description">
+                    <div class="section__description--wrapper">
+                        <p class="section__description--para">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Possimus eaque eveniet incidunt quo aperiam ipsa in tenetur dicta quae nisi nostrum,
+                            expedita
+                            repellat inventore, unde numquam cumque voluptatum minima repudiandae.
+                        </p>
+                        <p class="section__description--para">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Possimus eaque eveniet incidunt quo aperiam ipsa in tenetur dicta quae nisi nostrum,
+                            expedita
+                            repellat inventore, unde numquam cumque voluptatum minima repudiandae.
+                        </p>
+                    </div>
+                    <figure class="about__img--wrapper">
+                        <img src="./HTML Assets/about.jpg">
+                    </figure>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="discord">
+            <h2>Discord</h2>
+            <div class="row">
+                <div class="section__description">
+                    <figure class="about__img--wrapper">
+                        <img src="./HTML Assets/discord.png" alt="discord">
+                    </figure>
+                    <div class="section__description--wrapper">
+                        <p class="section__description--para">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Similique ut voluptatem quidem vitae mollitia maxime dolorem voluptatibus explicabo nobis!
+                            Aliquid, ea. Expedita, minima possimus. Sint maxime excepturi inventore voluptatibus rerum.
+                        </p>
+                        <p class="section__description--para">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Similique ut voluptatem quidem vitae mollitia maxime dolorem voluptatibus explicabo nobis!
+                            Aliquid, ea. Expedita, minima possimus. Sint maxime excepturi inventore voluptatibus rerum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <form action="">
+                <span>Email</span>
+                <input type="email" placeholder="claire@example.com">
+                <span>Message</span>
+                <textarea type="text" placeholder="Cool website, let's get connected!"></textarea>
+                <button>Contact Us!</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <img class="footer__logo" src="./HTML Assets/FES.svg" alt="">
+        <div class="footer__links">
+            <a class="footer__link" href="#about">About</a>
+            <a class="footer__link" href="#discord">Discord</a>
+            <a class="footer__link" href="#contact">Contact</a>
+            <a class="footer__link" href="#courses">Courses</a>
+        </div>
+        <p>Copyright Frontend Simplified</p>
+    </footer>
 </body>
+
 </html>
